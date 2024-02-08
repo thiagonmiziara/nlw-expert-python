@@ -16,4 +16,4 @@ def create_tags():
         response = tag_creator_view.validate_and_create(http_request)
     except Exception as exception:
         response = error_handler(exception)
-        return jsonify(response.body), response.status_code
+    return jsonify(response.body), response.status_code
